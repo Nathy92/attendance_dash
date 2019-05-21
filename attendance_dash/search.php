@@ -34,7 +34,7 @@ if(mysqli_num_rows($result) > 0)
  {
   $output .=           '<tr>
                                 <th scope="row">'.$row["Date"].'</th>
-								<td ><a href="view.php?value_key='.$row["Emp_id"].'">'.$row["Emp_id"].'</a></td>                
+								<td ><a href="view.php?value_key='.$row["Emp_id"].'" class="btn btn-success">'.$row["Emp_id"].'</a></td>                
 								<td>'.$row["Time"].'</td>
 								<td>'.$row["Status"].'</td>
                                 <td><a href="view.php">'.$row["Access_method"].'</a></td>
