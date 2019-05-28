@@ -7,7 +7,7 @@ if(isset($_GET["value_key"])){
 $search = mysqli_real_escape_string($conn, $_GET["value_key"]);
 $query = "
   SELECT * FROM attend 
-  WHERE Emp_id LIKE '%".$search."%'
+  WHERE Emp_id LIKE '%".$search."%' ORDER by Time
   
  ";
     
@@ -33,15 +33,14 @@ if(mysqli_num_rows($result) > 0)
 								<td ><a href="view.php?value_key='.$row["Emp_id"].'">'.$row["Emp_id"].'</a></td>                
 								<td>'.$row["Time"].'</td>
 								<td>'.$row["Status"].'</td>
-                                <td><a href="view.php">'.$row["Access_method"].'</a></td>
+                                <td>'.$row["Access_method"].'</td>
                             
                         
                         </tr>';
  }
  echo $output;
 }
-    
-    
+  
     
     
     
@@ -50,7 +49,7 @@ if(mysqli_num_rows($result) > 0)
 }
 else{ // Incase there id no value in the link
 
-echo "NOT YET!! PLEASE TRY AGAIN";
+echo "No Record Found!";
     
 }
 
