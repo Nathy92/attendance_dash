@@ -31,10 +31,41 @@ $output = '';
 				<h2>
 				
 				<div class="row">
-					<div class="col-xs-6">Welcome: Admin<br> StaffID:  root</div>
-                                    <div id="calender_container" class="col-xs-6">     
-                                  
-                                    <div class="col-md-2"><!--   Date User Interface         -->
+                <!--Start drop filter part-->
+					<div class="col-xs-4">
+                    <select class="form-control" name="" id="">
+                        <option value="">-- Select Option --</option>
+                        <option value="">Top 1</option>
+                        <option value="">Top 2</option>
+                        <option value="">Top 3</option>
+                        <option value="">Top 4</option>
+                        <option value="">Top 5</option>
+                        <option value="">Top 6</option>
+                        <option value="">Top 7</option>
+                        <option value="">Top 8</option>
+                        <option value="">Top 9</option>
+                        <option value="">Top 10</option>
+                        <?php
+
+                        ?>
+                    </select>
+                    <br>
+                    <br>
+
+                    <div id="table-container">
+                        <?php
+                             
+
+
+                        ?>
+                    </div>
+                    </div>
+                <!--End filter part-->
+               
+                <!--Start calendar container-->
+                                    <div id="calender_container" class="col-lg-4">     
+                                    <!--   Date User Interface -->
+                                    <div class="col-md-2">
                                     <input type="text" name="From" id="From" class="form-control" placeholder="From Date"/>
                                     </div>
                                     <div class="col-md-2">
@@ -45,8 +76,10 @@ $output = '';
                                     </div>
                                     <div class="clearfix"></div>
                                     </div> 
+                <!--End calendar container-->
                     
-					<div class="col-xs-6"> <!--  Search User Interface         -->
+                    <!--Start left search bar-->
+					<div class="col-xs-4"> <!--  Search User Interface         -->
                         <form class="navbar-form navbar-right" role="search" >
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search..." name="search_text" id="search_text">
@@ -54,6 +87,7 @@ $output = '';
 							<button type="submit" class="btn btn-success">Search</button>
 						</form>
 					</div>
+                    <!--End search bar-->
 				</div>
 				
 				
