@@ -1,0 +1,18 @@
+
+body {
+    height: 100%;
+     font-family: monospace;
+}
+
+
+
+
+.panel-default>.panel-heading-custom {
+ 
+    background: #5cb85c;
+    border-color: #5cb85c;
+  
+ }
+hr{
+color:aquamarine;    
+}

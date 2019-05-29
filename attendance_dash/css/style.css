@@ -1,22 +1,18 @@
-/*===============================================
-DEFAULT VALUES
-
-font family ; font-family: monospace;
-Green       : #00aa00
-White       :#fff;
 
 
-==================================================*/
 
 
-/*General Css*/
-html,
+
 body {
     height: 100%;
+     font-family: monospace;
 }
 
 
-body {
-    font-family: monospace;
-}
 
+
+/*.panel-default>.panel-heading-custom {
+    color: #333;
+    background: black;
+    border-color: #ddd;
+ }*/
